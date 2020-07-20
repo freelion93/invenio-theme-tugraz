@@ -25,28 +25,20 @@
         <a class="column item">Register</a>
     </div>
   </div> #}
-  <div class="ui bottom attached segment">
-  <div class="ui two column stackable  grid">
-    <div class="column">
-      <h4>Citeable. Discoverable.</h4>
-      <p>Uploads get a Digital Object Identifier (DOI) to make them easily and uniquely citeable.</p>
-      <h4>Communities</h4>
-      <p>Accept or reject uploads to your own community (e.g workshops, EU projects, institutions or entire disciplines).</p>
-      <h4>Trusted Research Data Management</h4>
-      <p>Built on top of CERN's expertise in managing 100s of petabytes of research data from the Large Hadron Collider.</p>
-    </div>
+  <div class="ui bottom attached segment sign-form">
+  <div class="ui one column stackable grid">
     <div class="column">
       {%- block form_header %}
-        <h3 class="ui header">{{ _('Log in to account') }}</h3>
+        <h3 class="ui inverted header">{{ _('Log in to account') }}</h3>
       {%- endblock form_header %}
 
       {%- if config.INVENIO_CONFIG_TUGRAZ_SHIBBOLETH == 'True' %}
-      <button class="ui icon white secondary inverted button" href="{{ url_for('sso_saml.sso', idp='idp') }}">
+      <button class="ui icon inverted button" href="{{ url_for('sso_saml.sso', idp='idp') }}">
         <img src="{{ url_for('static', filename=config.INVENIO_THEME_TUGRAZ_ICON)}}" style="width:2rem;">
         <span> With TU Graz account</span>
       </button>
       {%- endif %}
-      <div class="ui horizontal divider"> OR </div>
+      <div class="ui horizontal inverted divider"> OR </div>
       {%- block form_outer %}
         {%- with form = login_user_form %}
         <form class="ui form"action="{{ url_for_security('login') }}" method="POST" name="login_user_form">
@@ -60,7 +52,7 @@
           </div>
 
           <div class="tu-button-style">
-              <button type="submit" class="ui fluid secondary inverted button">
+              <button type="submit" class="ui fluid inverted button">
                 <i class="ui sign-in icon"></i>{{ _('Log In') }}
               </button>
           </div>
@@ -72,14 +64,14 @@
         <div class="column login-page-button">
           {%- block registerable %}
             {%- if security.registerable %}
-              <a class="ui header tiny" href="{{ url_for('security.register') }}">{{ _('Sign Up') }}</a>
+              <a class="ui header inverted tiny" href="{{ url_for('security.register') }}">{{ _('Sign Up') }}</a>
             {%- endif %}
           {%- endblock registerable %}
         </div>
         <div class="column login-page-button">
           {%- block recoverable %}
             {%- if security.recoverable %}
-                <a class="ui header tiny" href="{{ url_for('security.forgot_password') }}">{{ _('Forgot password?') }}</a>
+                <a class="ui header inverted tiny" href="{{ url_for('security.forgot_password') }}">{{ _('Forgot password?') }}</a>
             {%- endif %}
           {%- endblock recoverable %}
         </div>
