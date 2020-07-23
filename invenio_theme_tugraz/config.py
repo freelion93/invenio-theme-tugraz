@@ -66,8 +66,8 @@ BABEL_DEFAULT_LOCALE = 'en'
 BABEL_DEFAULT_TIMEZONE = 'Europe/Vienna'
 # Other supported languages (do not include BABEL_DEFAULT_LOCALE in list).
 I18N_LANGUAGES = [
-     ('de', _('German'))
- ]
+    ('de', _('German'))
+]
 
 # Invenio-app-rdm
 # =============

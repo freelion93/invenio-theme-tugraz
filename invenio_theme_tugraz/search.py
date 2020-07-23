@@ -25,6 +25,6 @@ class FrontpageRecordsSearch(RecordsSearch):
         default_filter = Q(
             'query_string',
             query=(
-                   'access_right:open '
-                   )
+                'access_right:open '
+            )
         )
