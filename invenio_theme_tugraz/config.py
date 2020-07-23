@@ -10,25 +10,25 @@
 
 from flask_babelex import gettext as _
 
-INVENIO_THEME_TUGRAZ_DEFAULT_VALUE = 'foobar'
+INVENIO_THEME_TUGRAZ_DEFAULT_VALUE = "foobar"
 """Default value for the application."""
 
-INVENIO_THEME_TUGRAZ_BASE_TEMPLATE = 'invenio_theme_tugraz/base.html'
+INVENIO_THEME_TUGRAZ_BASE_TEMPLATE = "invenio_theme_tugraz/base.html"
 """Default base template for the demo page."""
 
-INVENIO_THEME_TUGRAZ_ICON = 'images/icon_use.png'
+INVENIO_THEME_TUGRAZ_ICON = "images/icon_use.png"
 """icon used in login page"""
 
 # Invenio-theme
 # ============
 # See https://invenio-theme.readthedocs.io/en/latest/configuration.html
-THEME_LOGO = 'images/tug_logo.png'
+THEME_LOGO = "images/tug_logo.png"
 """TU Graz logo"""
 
 THEME_SEARCHBAR = False
 """Enable or disable the header search bar."""
 
-THEME_HEADER_TEMPLATE = 'invenio_theme_tugraz/header.html'
+THEME_HEADER_TEMPLATE = "invenio_theme_tugraz/header.html"
 """TU Graz header template"""
 
 # THEME_FRONTPAGE_TEMPLATE = 'invenio_theme_tugraz/frontpage.html'
@@ -37,43 +37,40 @@ THEME_HEADER_TEMPLATE = 'invenio_theme_tugraz/header.html'
 THEME_FRONTPAGE = False
 """Use default frontpage."""
 
-THEME_HEADER_LOGIN_TEMPLATE = 'invenio_theme_tugraz/accounts/header_login.html'
+THEME_HEADER_LOGIN_TEMPLATE = "invenio_theme_tugraz/accounts/header_login.html"
 """login page header"""
 
-THEME_FOOTER_TEMPLATE = 'invenio_theme_tugraz/footer.html'
+THEME_FOOTER_TEMPLATE = "invenio_theme_tugraz/footer.html"
 """footer template"""
 
-THEME_FRONTPAGE_TITLE = _('Frontpage Title')
+THEME_FRONTPAGE_TITLE = _("Frontpage Title")
 """Frontpage title."""
 
-THEME_SITENAME = _('Repository')
+THEME_SITENAME = _("Repository")
 """Site name."""
 
 # Invenio-accounts
 # ============
 # See https://invenio-accounts.readthedocs.io/en/latest/configuration.html
-SECURITY_LOGIN_USER_TEMPLATE = 'invenio_theme_tugraz/accounts/login.html'
+SECURITY_LOGIN_USER_TEMPLATE = "invenio_theme_tugraz/accounts/login.html"
 """Login template"""
 
-SECURITY_REGISTER_USER_TEMPLATE = \
-    'invenio_theme_tugraz/accounts/register_user.html'
+SECURITY_REGISTER_USER_TEMPLATE = "invenio_theme_tugraz/accounts/register_user.html"
 
 # Invenio-I18N
 # ============
 # See https://invenio-i18n.readthedocs.io/en/latest/configuration.html
-BABEL_DEFAULT_LOCALE = 'en'
+BABEL_DEFAULT_LOCALE = "en"
 # Default time zone
-BABEL_DEFAULT_TIMEZONE = 'Europe/Vienna'
+BABEL_DEFAULT_TIMEZONE = "Europe/Vienna"
 # Other supported languages (do not include BABEL_DEFAULT_LOCALE in list).
-I18N_LANGUAGES = [
-    ('de', _('German'))
-]
+I18N_LANGUAGES = [("de", _("German"))]
 
 # Invenio-app-rdm
 # =============
 # See https://invenio-app-rdm.readthedocs.io/en/latest/configuration.html
-SEARCH_UI_HEADER_TEMPLATE = 'invenio_theme_tugraz/header.html'
+SEARCH_UI_HEADER_TEMPLATE = "invenio_theme_tugraz/header.html"
 """Search page's header template."""
 
-DEPOSITS_HEADER_TEMPLATE = 'invenio_theme_tugraz/header.html'
+DEPOSITS_HEADER_TEMPLATE = "invenio_theme_tugraz/header.html"
 """Deposits header page's template."""
