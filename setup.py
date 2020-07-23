@@ -19,10 +19,18 @@ tests_require = [
 ]
 
 extras_require = {
-    "docs": ["Sphinx>=1.5.1",],
-    "mysql": ["invenio-db[mysql]>=1.0.0",],
-    "postgresql": ["invenio-db[postgresql]>=1.0.0",],
-    "sqlite": ["invenio-db>=1.0.0",],
+    "docs": [
+        "Sphinx>=1.5.1",
+    ],
+    "mysql": [
+        "invenio-db[mysql]>=1.0.0",
+    ],
+    "postgresql": [
+        "invenio-db[postgresql]>=1.0.0",
+    ],
+    "sqlite": [
+        "invenio-db>=1.0.0",
+    ],
     "tests": tests_require,
 }
 
@@ -46,7 +54,6 @@ install_requires = [
 
 packages = find_packages()
 
-
 # Get the version string. Cannot be done with import!
 g = {}
 with open(os.path.join("invenio_theme_tugraz", "version.py"), "rt") as fp:
@@ -58,7 +65,8 @@ setup(
     version=version,
     description=__doc__,
     long_description=readme + "\n\n" + history,
-    keywords="invenio, theme, invenioRDM, TU-Graz, Graz University of Technology, statistics",
+    keywords=
+    "invenio, theme, invenioRDM, TU-Graz, Graz University of Technology, statistics",
     license="MIT",
     author="mojib wali",
     author_email="mojib.wali@tugraz.at",
@@ -74,7 +82,9 @@ setup(
         "invenio_base.blueprints": [
             "invenio_theme_tugraz = invenio_theme_tugraz.views:blueprint",
         ],
-        "invenio_i18n.translations": ["messages = invenio_theme_tugraz",],
+        "invenio_i18n.translations": [
+            "messages = invenio_theme_tugraz",
+        ],
         "invenio_assets.webpack": [
             "invenio_theme_tugraz_theme = invenio_theme_tugraz.webpack:theme",
         ],
