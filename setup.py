@@ -5,12 +5,11 @@
 # invenio-theme-tugraz is free software; you can redistribute it and/or
 # modify it under the terms of the MIT License; see LICENSE file for more
 # details.
-
 """invenio module for TUGRAZ theme."""
-
 import os
 
-from setuptools import find_packages, setup
+from setuptools import find_packages
+from setuptools import setup
 
 readme = open("README.rst").read()
 history = open("CHANGES.rst").read()

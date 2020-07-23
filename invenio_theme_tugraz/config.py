@@ -5,9 +5,7 @@
 # invenio-theme-tugraz is free software; you can redistribute it and/or
 # modify it under the terms of the MIT License; see LICENSE file for more
 # details.
-
 """invenio module for TUGRAZ theme."""
-
 from flask_babelex import gettext as _
 
 INVENIO_THEME_TUGRAZ_DEFAULT_VALUE = "foobar"

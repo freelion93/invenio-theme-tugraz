@@ -5,10 +5,9 @@
 # invenio-theme-tugraz is free software; you can redistribute it and/or
 # modify it under the terms of the MIT License; see LICENSE file for more
 # details.
-
 """invenio module for TUGRAZ theme."""
-
-from flask import Blueprint, render_template
+from flask import Blueprint
+from flask import render_template
 from flask_babelex import gettext as _
 
 from .search import FrontpageRecordsSearch

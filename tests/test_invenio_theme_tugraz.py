@@ -5,9 +5,7 @@
 # invenio-theme-tugraz is free software; you can redistribute it and/or
 # modify it under the terms of the MIT License; see LICENSE file for more
 # details.
-
 """Module tests."""
-
 from flask import Flask
 
 from invenio_theme_tugraz import inveniothemetugraz
